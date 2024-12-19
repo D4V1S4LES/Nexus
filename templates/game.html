@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/style/index.css">
+  <link rel="shortcut icon" href="../static/img/Nexus-grande.jpg" type="image/x-icon">
+  <title>Nexus Table RPG</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="logo"> <a href="index.html">NEXUS</a></h1>
+
+    <nav>
+      <ul class="header-menu">
+        <li><a href="#como-jogar">Como Jogar</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="introducao">
+    <main class="dado-main">
+      <div class="dado-main-content">
+        <h2 class="dado-titulo">Escolha seu dado</h2>
+
+        <div class="dado-opcao">
+          <p class="dado-subtitulo">Dados disponíveis: <br> D4, D6, D8, D10, D12 ou D20</p>
+
+          <select name="dado" id="dado">
+            <option value="4">D4</option>
+            <option value="6">D6</option>
+            <option value="8">D8</option>
+            <option value="10">D10</option>
+            <option value="12">D12</option>
+            <option value="20">D20</option>
+          </select>
+        </div>
+
+        <h4 id="resultado">Resultado: </h4>
+
+        <button type="button" onclick="atchin()">Rolar dados</button>
+
+      </div>
+
+    </main>
+
+    <div class="introducao-conteudo">
+      <h1>Nexus<br> Table RPG <br>& Dice Roller</h1>
+      <p>Rolador de dados para RPG de mesa</p>
+    </div>
+  </div>
+
+
+
+  <script>
+    function atchin() {
+      const dadoSelecionado = document.getElementById("dado").value;
+      const maximoDado = parseInt(dadoSelecionado, 10);
+      const numeroSorteado = Math.floor(Math.random() * maximoDado) + 1;
+
+      document.getElementById("resultado").textContent =
+        "Resultado: Você rodou um D" + dadoSelecionado + " e tirou " + numeroSorteado;
+    }
+  </script>
+
+  <div class="conteudo" id="como-jogar">
+    <div class="conteudo-conteiner">
+      <h2 class="subtitulo">Table rpg &<br> dice roller</h2><br>
+
+      <div class="conteudo-texto">
+        <h3>Como Jogar</h3><br>
+
+        <ul>
+          <h4>01. Escolha o sistema de RPG</h4>
+          <li>- Defina o conjunto de regras (Dungeons & Dragons, GURPS, Call of Cthulhu, etc.) que se alinhe ao estilo de jogo desejado.</li><br>
+          <li>- Certifique-se de que todos os jogadores estejam de acordo com o sistema escolhido.</li>
+        </ul>
+
+        <ul>
+          <h4>02. Defina os Papéis no Grupo</h4>
+          <li>- Escolha quem será o Mestre de Jogo (MJ), responsável por narrar e guiar a aventura.</li><br>
+          <li>Os demais participantes assumirão o papel de jogadores, cada um controlando um personagem.</li>
+        </ul>
+
+        <ul>
+          <h4>03. Criação dos Personagens</h4>
+          <li>- Cada jogador define o tipo de personagem que deseja interpretar: guerreiro, mago, ladrão, etc.</li><br>
+          <li>- Pense em uma história de fundo para o personagem (origem, motivação, personalidade).</li><br>
+          <li>- Siga as regras do sistema para determinar atributos como força, destreza, inteligência, entre outros.</li>
+        </ul>
+
+        <ul>
+          <h4>04. Planejamento do Mestre de Jogo</h4>
+          <li>- Desenvolva uma história ou escolha um módulo pronto.</li><br>
+          <li>- Descreva o cenário (reino, cidade, ambiente) e os desafios que os personagens enfrentarão.</li><br>
+          <li>- Elabore personagens secundários (aliados, inimigos) e eventos que enriquecerão a história.</li>
+        </ul>
+
+        <ul>
+          <h4>05. Durante o Jogo</h4>
+          <li>- O Mestre apresenta o mundo e o contexto inicial para os jogadores.</li><br>
+          <li>- Jogadores interpretam seus personagens, descrevendo ações e interagindo com NPCs e o ambiente.</li><br>
+          <li>- Quando os personagens realizam ações significativas ou enfrentam desafios, o Mestre pede uma rolagem de dados para determinar sucesso ou falha. Quando necessário, combates são realizados seguindo as regras do sistema, com turnos e jogadas de dados.</li><br>
+          <li>- O Mestre adapta a história com base nas decisões e ações dos jogadores.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="dado-footer">
+      <div class="dado-footer-conteiner">
+        <img src="../static/img/faculdade.png" alt="faculdade">
+
+        <div>
+          <h2>Centro Universitário Santa Cruz</h2>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>

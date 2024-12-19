@@ -1,0 +1,21 @@
+.dado-footer {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .dado-footer-conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dado-footer-conteiner img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+  }
+  

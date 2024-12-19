@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/style/index.css">
+  <link rel="shortcut icon" href="../static/img/Nexus-grande.jpg" type="image/x-icon">
+  <title>Nexus Table RPG</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="logo">NEXUS</h1>
+    <!-- <img src="./img/img/marca.svg" alt="Logo"> -->
+
+    <nav>
+      <ul class="header-menu">
+        <li><a href="#como-jogar">Como Jogar</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="{{ url_for('game')}}">Jogar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="introducao">
+    <img src="../static/img/teste.jpg" alt="logo">
+
+    <div class="introducao-conteudo">
+      <h1>Nexus<br> Table RPG <br>& Dice Roller</h1>
+      <p>Rolador de dados para RPG de mesa</p>
+    </div>
+  </div>
+
+  <div class="conteudo" id="como-jogar">
+    <div class="conteudo-conteiner">
+      <h2 class="subtitulo">Table rpg &<br> dice roller</h2><br>
+
+      <div class="conteudo-texto">
+        <h3>Como Jogar</h3><br>
+
+        <ul>
+          <h4>01. Escolha o sistema de RPG</h4>
+          <li>- Defina o conjunto de regras (Dungeons & Dragons, GURPS, Call of Cthulhu, etc.) que se alinhe ao estilo de jogo desejado.</li><br>
+          <li>- Certifique-se de que todos os jogadores estejam de acordo com o sistema escolhido.</li>
+        </ul>
+
+        <ul>
+          <h4>02. Defina os Papéis no Grupo</h4>
+          <li>- Escolha quem será o Mestre de Jogo (MJ), responsável por narrar e guiar a aventura.</li><br>
+          <li>Os demais participantes assumirão o papel de jogadores, cada um controlando um personagem.</li>
+        </ul>
+
+        <ul>
+          <h4>03. Criação dos Personagens</h4>
+          <li>- Cada jogador define o tipo de personagem que deseja interpretar: guerreiro, mago, ladrão, etc.</li><br>
+          <li>- Pense em uma história de fundo para o personagem (origem, motivação, personalidade).</li><br>
+          <li>- Siga as regras do sistema para determinar atributos como força, destreza, inteligência, entre outros.</li>
+        </ul>
+
+        <ul>
+          <h4>04. Planejamento do Mestre de Jogo</h4>
+          <li>- Desenvolva uma história ou escolha um módulo pronto.</li><br>
+          <li>- Descreva o cenário (reino, cidade, ambiente) e os desafios que os personagens enfrentarão.</li><br>
+          <li>- Elabore personagens secundários (aliados, inimigos) e eventos que enriquecerão a história.</li>
+        </ul>
+
+        <ul>
+          <h4>05. Durante o Jogo</h4>
+          <li>- O Mestre apresenta o mundo e o contexto inicial para os jogadores.</li><br>
+          <li>- Jogadores interpretam seus personagens, descrevendo ações e interagindo com NPCs e o ambiente.</li><br>
+          <li>- Quando os personagens realizam ações significativas ou enfrentam desafios, o Mestre pede uma rolagem de dados para determinar sucesso ou falha. Quando necessário, combates são realizados seguindo as regras do sistema, com turnos e jogadas de dados.</li><br>
+          <li>- O Mestre adapta a história com base nas decisões e ações dos jogadores.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sobre" id="sobre">
+    <div class="sobre-conteiner">
+      <h2 class="sobre-subtitulo"> so<br>bre<br> pro<br>jeto</h2>
+
+      <div class="sobre-texto">
+        <h2 class="sobre-texto-subtitulo">Sobre o Projeto</h2><br>
+
+        <p>
+          O projeto Nexus Table RPG tem como finalidade desenvolver um plataforma de otimização para jogos de RPG de mesa, melhorando a experiência do jogador e tornando mais divertido os jogos de RPG.
+          <br><br>
+
+          Nexus é um rolador de dados automático e dinâmico para partidas de RPG de mesa, com foco na melhor agilidade das jogadas ele faz cálculos e sorteia número com abse no tipo de dado escolhido, além de manter um histórico de jogadas para cada lançe do jogador, tornando assim um meio confiável para seus jogos de RPG.
+          <br><br>
+
+          O projeto foi motivado pela complexidade das mecânicas desses jogos, que muitas vezes se tornam desafiadoras e frustrantes para novos jogadores devido à necessidade de múltiplos tipos de dados e regras específicas.
+          Com uma interface intuitiva e responsiva, o rolador de dados automatizado proporcionará uma experiência de jogo mais imersiva e dinâmica, permitindo a exploração de campanhas personalizadas e uma interação fluida durante as sessões de jogo.
+          <br><br>
+
+          Nexus rolador de dados é um site que ainda está em fase de desenvolvimento em que visa/busca simplificar e facilitar jogos de RPG de mesa com foco na rolagem de dados.
+          <br><br>
+        </p><br>
+
+        <h2>Participantes</h2><br>
+
+        <div>
+          <ul class="participantes">
+            <li>Davi Eduardo Cristo Sales</li>
+            <li>Guilherme Ferreira Ramos</li>
+            <li>Daniel Ribeiro Meira</li>
+            <li>Leonardo Bertotti</li>
+            <li>Abiny Magalhaes</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-conteiner">
+      <img src="../static/img/faculdade.png" alt="faculdade">
+
+      <div>
+        <h2>Centro Universitário Santa Cruz</h2>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

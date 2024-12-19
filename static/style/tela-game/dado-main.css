@@ -1,0 +1,87 @@
+.dado-main {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 40px 20px;
+  }
+  
+  .dado-main-content {
+    background-color: #efe9e9c6;
+    display: grid;
+    padding: 30px 0px;
+    gap: 15px;
+    width: 350px;
+    max-height: 400px;
+  
+    border-radius: 6px;
+    border: 1px solid #a8a8a8;
+  
+    justify-content: center;
+    align-content: start;
+  }
+  
+  .dado-titulo {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .dado-main-content p {
+    font-size: 15px;
+  }
+  
+  .dado-main-content select {
+    padding: 5px;
+    font-size: 15px;
+    width: 130px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-self: start;
+  
+    border: none;
+    border-radius: 6px;
+    border: 1px solid #141414;
+    background-color: #141414;
+    color: #ffffff;
+    font-family: Fira Sans, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .dado-main-content select:hover {
+    background-color: #ffffff;
+    color: #141414;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid #141414;
+  }
+  
+  .dado-main-content button {
+    padding: 10px;
+    background-color: #141414;
+    border: none;
+    border: 1px solid #141414;
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: fira Sans, sans-serif;
+    font-size: 15px;
+  }
+  
+  .dado-main-content button:hover {
+    background-color: #ffffff;
+    color: #141414;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid #141414;
+  }
+  
+  .dado-opcao {
+    display: grid;
+    /* grid-template-columns: 2fr 1fr; */
+  
+    align-items: start;
+    gap: 10px;
+  }
+  
+  

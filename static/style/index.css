@@ -1,0 +1,10 @@
+@charset "UTF-08";
+
+@import 'global.css';
+@import 'header.css';
+@import 'introducao.css';
+@import 'conteudo.css';
+@import 'sobre.css';
+@import 'footer.css';
+@import 'tela-game/dado-main.css';
+@import 'tela-game/dado-footer.css';
